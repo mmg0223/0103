@@ -1,0 +1,28 @@
+package array;
+
+public class ArrayTest02 {
+
+	public static void main(String[] args) {
+		// 실수형 변수 여러개...배열
+		// 1. 실수형 배열변수
+		double[] ar;
+		double ar2[], ar3;
+		double[] ar4, ar5;
+		ar3 = 3.14; // ar3은 배열변수가 아닌 double형 변수
+		
+		double[] arr = new double[100];
+		/*
+		 * // arr[0], arr[1], arr[2], arr[3] 
+		 * System.out.println("arr[0] = " + arr[0]);
+		 * System.out.println("arr[1] = " + arr[1]); 
+		 * System.out.println("arr[2] = " + arr[2]);
+		 * System.out.println("arr[3] = " + arr[3]);
+		 * System.out.println("-----------------");
+		 */
+		for ( int i = 0; i < arr.length; i++) {
+			System.out.println("arr[" + i + "] = " + arr[i]);
+		}
+
+	}
+
+}
