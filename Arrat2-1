@@ -1,0 +1,18 @@
+package array2;
+
+public class Array2Test01 {
+
+	public static void main(String[] args) {
+		// 다차원 배열
+		// 1. 배열변수 선언
+		int[][] arr;
+		int[][][] arr3;
+		int[][][][] arr4;
+		
+		int[] ar2[], ar3[], ar4, ar5[][][];
+		int[][] a, b, c, d;
+		// b = 10;
+
+	}
+
+}
