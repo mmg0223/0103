@@ -1,0 +1,49 @@
+package programmers;
+
+import java.util.Arrays;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		Solution solution = new Solution();
+		int[] result = solution.solution(15, 5);
+		for(int i = 0; i < result.length; i++) {
+			System.out.print(result[i] + " ");
+		}
+	}
+
+}
+
+
+class Solution{
+	// String name = "조재청";
+	public int[] solution(int n, int k) {
+	    // return 값은 malloc 등 동적 할당을 사용해주세요. 할당 길이는 상황에 맞게 변경해주세요.
+	    int[] answer = {};
+	    
+	    
+	    for(int i = 1; i <= n; i++) {
+	    	// k = 3 만약에 i가 k 배수이면?
+	    	if(i%k == 0) {
+	    		// 임시로 데이터 저장공간 확보
+	    		// int [] temp = new int[answer.length + 1];
+	    		int [] temp = Arrays.copyOf(answer, answer.length + 1);
+	    		
+	    		// System.arraycopy(answer, 0, temp, 0, answer.length);
+	    		
+	    		/*
+	    		// answer -> temp 수동복사
+	    		for(int j = 0; j < answer.length; j++) {
+	    			temp[j] = answer[j];
+	    		}
+	    		*/
+	    		// 임시 공간의 마지막 주소에 배수를 저장
+	    		temp[temp.length - 1] = i;
+	    		
+	    		answer = temp;
+	    	}
+	    }
+	    
+	    return answer;
+	}
+}
