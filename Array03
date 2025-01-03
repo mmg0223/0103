@@ -1,0 +1,23 @@
+package array;
+
+public class ArrayTest03 {
+
+	public static void main(String[] args) {
+		// 
+		String[] strs = new String[3];
+		// 참조형변수 default value 는 null : 아직 참조하지 않는다.
+		System.out.println(strs[0]);
+		int[] arr = null;
+		System.out.println(arr);
+		int[] arr2 = new int[] {1, 2, 3};
+		int[] arr3 = {10, 20, 30}; // 선언과 동시에만 초기화 가능
+		// 배열도 할당과 동시에 초기화 리스트로 초기화 가능 
+		// int n = 10;
+		
+		int[] arr4;
+		arr4 = new int[] {10, 20, 30};
+		// arr4 = {1, 2, 3}; 불가능
+
+	}
+
+}
